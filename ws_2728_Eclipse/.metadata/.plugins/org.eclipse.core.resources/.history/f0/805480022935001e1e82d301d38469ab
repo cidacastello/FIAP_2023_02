@@ -1,0 +1,5 @@
+package br.com.fiap.mspagamentos.controller;
+
+public class PagamentoController {
+
+}

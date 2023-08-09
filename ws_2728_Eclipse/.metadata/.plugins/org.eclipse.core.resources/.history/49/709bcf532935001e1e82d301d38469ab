@@ -1,0 +1,16 @@
+package br.com.fiap.mspagamentos.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PagamentoController {
+	
+	public String getOi() {
+		
+		return "Oi";
+		
+	}
+
+}
+
+
