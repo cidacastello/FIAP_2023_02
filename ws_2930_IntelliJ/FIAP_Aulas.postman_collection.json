@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "709b6e1a-e988-474e-aaa6-8ab3cff37a33",
+		"name": "FIAP_Aulas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9099725"
+	},
+	"item": [
+		{
+			"name": "Pagamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagamento por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pagamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagamento delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pagamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagamento insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor\": 150.32,\r\n    \"nome\": \"Mozart\",\r\n    \"numeroDoCartao\": \"35214578\",\r\n    \"codigo\": \"654\",\r\n    \"validade\": \"12/29\",\r\n    \"pedidoId\": 2,  \r\n    \"formaDePagamentoId\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagamento update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"valor\": 1250.00,\r\n    \"nome\": \"Nicodemus\",\r\n    \"numeroDoCartao\": \"123456987\",\r\n    \"validade\": \"12/30\",\r\n    \"codigo\": \"123\",\r\n    \"status\": \"CRIADO\",\r\n    \"pedidoId\": 1,\r\n    \"formaDePagamentoId\": 2\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pagamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagamento insert dados obrig",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor\": 250.38,\r\n    \"pedidoId\": 2,  \r\n    \"formaDePagamentoId\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
