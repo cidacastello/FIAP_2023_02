@@ -44,8 +44,8 @@ public class PagamentoDTO {
         this.validade = entity.getValidade();
         this.codigo = entity.getCodigo();
         this.status = entity.getStatus();
-        this.pedidoId = getPedidoId();
-        this.formaDePagamentoId = getFormaDePagamentoId();
+        this.pedidoId = entity.getPedidoId();
+        this.formaDePagamentoId = entity.getFormaDePagamentoId();
     }
 
     public Long getId() {
